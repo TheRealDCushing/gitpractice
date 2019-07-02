@@ -203,8 +203,9 @@ def collect_data_bycurrenct_date(userSelectedCrypto1=None,userSelectedCrypto2=No
     # return(json.dumps({'items': items}, default=alchemyencoder))
 
 
-
-
+@app.route("/sayHello")
+def sayHello():
+  print("Hello")
 
 if __name__ == "__main__":
     app.run(debug=True)
